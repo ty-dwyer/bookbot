@@ -16,5 +16,4 @@ def get_nums_chars(input):
 def sort_dict(d):
     filtered = {k: v for k, v in d.items() if k.isalpha()}
     new_dict = sorted(filtered.items())
-    for k, v in new_dict:
-        print(f"{k}: {v}")
+    return "\n".join(f"{k}: {v}" for k, v in new_dict)
